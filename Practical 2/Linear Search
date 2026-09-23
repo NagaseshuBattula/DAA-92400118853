@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int input[100],count,i,num;
+    cout<<"enter a element in the array\n";
+    cin >> count;
+    cout << "Enter " << count << " number\n";
+    for (i=0;i<count;i++)
+    {
+        cin >> input[i];
+    }
+    cout << "Enter the element to search \n";
+    cin>>num;
+    for (i=0;i<count;i++)
+    {
+        if (input[i]==num)
+        {
+            cout<<"Element found at index" << i;
+            break;
+        }
+    }
+    if(i==count)
+    {
+        cout <<"Element not present in Array\n";
+    }
+    return 0;
+}
